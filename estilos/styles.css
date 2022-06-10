@@ -47,34 +47,17 @@
         /* grid-area:1/1/2/2; */
         grid-area: header;
         width: 100%;
-        height: 20vh;
-        top: -2%;
+        top: 0%;
         position: sticky;
         align-self: start;
         z-index: 2;
+        background-color: rgb(246, 239, 231);
     }
 
 
     .menu {
-        display: flex;
-        list-style: none;
-        align-items: center;
-        align-content: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        background-color: rgb(246, 239, 231);
-        font-size: x-large;
-        border-top: solid #67453d;
-        border-bottom: solid #67453d;
-    }
 
-    #three__dots {
         font-size: x-large;
-        transition: 0.30s;
-    }
-
-    #three__dots:hover {
-        font-size: xx-large;
     }
 
     #logo {
@@ -92,10 +75,12 @@
     .buttom {
         text-decoration: none;
         transition: 0.5s;
+        color: #67453d;
     }
 
     .buttom:hover {
-        font-size: xx-large;
+        font-size: larger;
+        color: #67453d;
     }
 
     /* -----------------------MAIN---------------------- */
@@ -138,6 +123,9 @@
         right: 0;
     }
 
+    #title{
+        font-size: inherit;
+    }
     /* -----plates------- */
 
     .plato1 {
@@ -585,4 +573,20 @@
 .cards {
     display: inline-block;
     text-align: center;
+}
+
+/* -------------------------------------------ABOUT PAGE---------------------------------- */
+
+#main__about {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1em;
+}
+
+#main__cart {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1em;
 }
