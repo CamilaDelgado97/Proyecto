@@ -123,9 +123,10 @@
         right: 0;
     }
 
-    #title{
+    #title {
         font-size: inherit;
     }
+
     /* -----plates------- */
 
     .plato1 {
@@ -235,7 +236,7 @@
     }
 
     @keyframes ilustraciones {
-        25%{
+        25% {
             transform: translateY(2px);
         }
     }
@@ -526,7 +527,7 @@
     }
 
     #botonera__footer {
-   
+
         height: 47%;
         width: 19%;
         justify-content: space-between;
@@ -575,9 +576,9 @@
     text-align: center;
 }
 
-/* -------------------------------------------ABOUT PAGE---------------------------------- */
+/* -------------------------------------------SING ING PAGE---------------------------------- */
 
-#main__about {
+#main__singin {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -589,4 +590,20 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 1em;
+}
+
+.registrate {
+    justify-self: center;
+}
+
+form {
+    text-align: center;
+}
+
+.centrar {
+    text-align: -webkit-center;
+}
+
+.form-check .form-check-input {
+    float: inherit;
 }
