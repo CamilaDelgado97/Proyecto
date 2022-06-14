@@ -281,29 +281,6 @@
 
 }
 
-/* --------------------------------------START SHOP SECTION------------------------------------------------- */
-
-
-/* #mesa {
-    animation: mesa 4s;
-}
-
-@keyframes mesa {
-    0% {
-        transform: scale(500px);
-    }
-
-    25% {
-        border-radius: 15%;
-    }
-    50% {
-        width: 500px;
-    }
-    75% {
-        transform: translateX(600px);
-    }
-} */
-
 
 /* 
 ----------------------------------MEDIA QUERIES---------------------------------------- */
@@ -315,44 +292,6 @@
         flex-direction: column;
         margin: 0 0 0 2%;
     }
-
-    /* -----------------------------------HEADER MOBILE-------------------------------------- */
-
-    #home,
-    #shop,
-    #about,
-    #contact {
-        display: none;
-    }
-
-    .menu {
-        justify-content: start;
-        text-align: center;
-    }
-
-    #three__dots {
-
-        transition: none;
-    }
-
-    #three__dots {
-        font-size: x-large;
-    }
-
-    #logo {
-        padding: 0;
-    }
-
-    .imgLogo {
-        max-width: 60%;
-
-    }
-
-    .carrito {
-        max-height: 1.2rem;
-    }
-
-    /* ------------------------------END HEADER MOBILE---------------------------------------------- */
 
     /* ------------------------------MAIN MOBILE (HERO)---------------------------------------------------- */
 
@@ -376,169 +315,160 @@
     }
 
     .titulo {
-        right: 34%;
-        font-size: 1em;
-        transition: 5s;
-        z-index: 1;
+        font-size: 3em;
     }
 
-    .titulo:hover {
-        right: 0;
-    }
 
     .contenedor__img {
         display: flex;
         align-items: center;
-        margin: 24% 0 0 0;
+        margin: 24% 0 44% 0;
     }
 
-    /* -----plates------- */
+    /* -----plates  MOBILEEEE   --------------------------------------------------------------------------------------- */
 
     .plato1 {
-        max-height: 6em;
-        margin: 0;
+        max-height: 7em;
+        margin: 0 0 3em 0;
         transition: 3s;
-        align-self: normal;
+        align-self: baseline;
     }
 
     .plato1:hover {
-        margin-left: 17%;
-        margin-top: 2%;
+        margin: 0 0 3em 0;
+        transform: rotate(45deg);
     }
 
     .plato2 {
-        max-height: 5em;
+        max-height: 6em;
         transition: 3s;
         margin: 0;
         align-self: self-end;
     }
 
     .plato2:hover {
-        margin-left: 38%;
-        margin-top: 18%;
-
+        margin: 0;
+        transform: rotate(45deg);
     }
 
     .plato3 {
         max-height: 8em;
-        margin: 0;
+        margin: 0 0 3em 0;
         transition: 3s;
     }
 
+
     .plato3:hover {
-        margin-left: 50%;
-        margin-top: 2%;
-    }
-
-    /* end plates */
-
-    #flecha {
-        margin: 40% 0 22% 0;
-        right: 50%;
-        bottom: 9%;
-        font-size: xx-large;
-        transition: 0.5s;
-    }
-
-    #flecha:hover {
-        font-size: initial;
-    }
-
-    /* ----------------------------INFO SECTION-------------------------------- */
-
-    .part1 {
-        grid-area: info;
-        display: flex;
-        flex-direction: column;
-        gap: 3em;
-    }
-
-    .info {
-        grid-area: info;
-        display: flex;
-        flex-direction: column;
-        font-size: unset;
-        align-items: start;
-        gap: 5em;
-    }
-
-    #coleccion:hover {
-        color: rgb(246, 239, 231);
-    }
-
-    #mesa {
-        grid-area: mesa;
-        max-width: 86%;
-
-    }
-
-    /* --------------------------------COLECTION---------------------------------- */
-
-    .part2 {
-        grid-area: colection;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: start;
-        gap: 3em;
-    }
-
-    .part2 h2 {
-        font-size: revert;
-    }
-
-    #figures {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: start;
-    }
-
-    .ilustracion {
-        width: 80%;
-        border: solid #67453d;
-        border-radius: 12%;
-        transition: 1s;
-    }
-
-    .ilustracion:hover {
-        background-color: rgb(246, 239, 231);
-
+        margin: 0 0 3em 0;
+        transform: rotate(45deg);
     }
 
 
-    .part3 {
-        display: none;
-    }
+/* end plates */
 
-
-    /* 
-    -----------------------------FOOTER--------------------------- */
-
-    footer {
-        background: white;
-        padding: 1em;
-        grid-area: footer;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: flex-end;
-        gap: 1em;
-        font-size: 63%;
-    }
-
-    #botonera__footer {
-
-        height: 47%;
-        width: 19%;
-        justify-content: space-between;
-    }
-
-    .boton__footer {
-        transition: 0.5s;
-        font-size: large;
-    }
+#flecha {
+    text-align: center;
 }
 
+#flecha:hover {
+    font-size: initial;
+}
+
+/* ----------------------------INFO SECTION-------------------------------- */
+
+.part1 {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    font-size: unset;
+    align-items: start;
+    gap: 5em;
+}
+
+#coleccion:hover {
+    color: rgb(246, 239, 231);
+}
+
+#mesa {
+    grid-area: mesa;
+    max-width: 86%;
+
+}
+
+/* --------------------------------COLECTION---------------------------------- */
+
+.part2 {
+    grid-area: colection;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    gap: 3em;
+}
+
+.part2 h2 {
+    font-size: revert;
+}
+
+#figures {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+}
+
+.ilustracion {
+    width: 80%;
+    border: solid #67453d;
+    border-radius: 12%;
+    transition: 1s;
+}
+
+.ilustracion:hover {
+    background-color: rgb(246, 239, 231);
+
+}
+
+
+.part3 {
+    display: none;
+}
+
+
+/* 
+    -----------------------------FOOTER--------------------------- */
+
+footer {
+    background: white;
+    padding: 1em;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+    gap: 1em;
+    font-size: 63%;
+}
+
+#botonera__footer {
+
+    height: 47%;
+    width: 19%;
+    justify-content: space-between;
+}
+
+.boton__footer {
+    transition: 0.5s;
+    font-size: large;
+}
+
+}
 
 /* ----------------------------START SHOP PAGE ----------------------------------------------------------------*/
 
@@ -564,6 +494,10 @@
     flex-direction: column;
 }
 
+.conteiner__img_shop {
+    gap: 1em;
+    padding: 3em;
+}
 
 .imgshop {
     max-height: 15em;
@@ -574,6 +508,30 @@
 .cards {
     display: inline-block;
     text-align: center;
+}
+
+.card-title {
+    font-size: larger;
+}
+
+.card {
+    background-color: rgb(0 0 0 / 13%);
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: rgb(0 0 0 / 20%);
+    border-color: rgb(0 0 0 / 20%);
+}
+
+.btn-primary:hover {
+    background-color: rgb(0 0 0 / 13%);
+    border-color: rgb(0 0 0 / 20%);
+}
+
+.btn-primary:link {
+    background-color: rgb(0 0 0 / 13%);
+    border-color: rgb(0 0 0 / 20%);
 }
 
 /* -------------------------------------------SING ING PAGE---------------------------------- */
@@ -589,7 +547,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 1em;
+    gap: 6em;
 }
 
 .registrate {
@@ -606,4 +564,34 @@ form {
 
 .form-check .form-check-input {
     float: inherit;
+}
+
+/* --------------------contact---------------------------------------------------------------------------- */
+
+
+#main__contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 6em;
+}
+
+.needs-validation {
+    place-content: center;
+    padding: 2em 0px 0 0;
+}
+
+#validationCustom03 {
+    height: 11em;
+    width: 40em;
+}
+
+.btn-outline-success {
+    color: #67453d;
+    border-color: #67453d;
+}
+
+.btn-outline-success:hover {
+    color: #67453d;
+    border-color: #67453d;
 }
