@@ -1,0 +1,68 @@
+
+#main__shop {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 0;
+  }
+  
+
+  .titulo{
+     text-align: center;
+
+    &-productos {
+    @extend .titulo;
+    margin: 1em 0 1em 0;
+   
+  }
+}
+  
+  .titulo__colecciones {
+    margin: 1em;
+  }
+  
+  .plants {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .conteiner__img_shop {
+    gap: 1em;
+    padding: 3em;
+  }
+  
+  .imgshop {
+    max-height: 15em;
+    margin: 3em 3em 0 3em;
+    border-radius: 15%;
+  }
+  
+  .cards {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: larger;
+  }
+  
+  .card {
+    background-color: rgba(0, 0, 0, 0.13);
+    text-align: center;
+  }
+  
+  .btn-primary {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-primary:hover {
+    background-color: rgba(0, 0, 0, 0.13);
+    border-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-primary:link {
+    background-color: rgba(0, 0, 0, 0.13);
+    border-color: rgba(0, 0, 0, 0.2);
+  }
+  

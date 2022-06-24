@@ -1,0 +1,297 @@
+@import "_generales";
+@import "_nav";
+@import"_index";
+
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap");
+/* ---------------GENERALES--------------------- */
+
+/* 
+----------------------------------MEDIA QUERIES---------------------------------------- */
+@media screen and (max-width: 480px) {
+  .conteiner {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 2%;
+  }
+
+  /* ------------------------------MAIN MOBILE (HERO)---------------------------------------------------- */
+  main {
+    gap: 4em;
+  }
+
+  .hero {
+    grid-area: hero;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plato1,
+.plato2,
+.plato3,
+.titulo,
+#flecha {
+    position: unset;
+    z-index: 0;
+  }
+
+  .titulo {
+    font-size: 3em;
+  }
+
+  .contenedor__img {
+    display: flex;
+    align-items: center;
+    margin: 24% 0 44% 0;
+  }
+
+  /* -----plates  MOBILEEEE   --------------------------------------------------------------------------------------- */
+  .plato1 {
+    max-height: 7em;
+    margin: 0 0 3em 0;
+    transition: 3s;
+    align-self: baseline;
+  }
+
+  .plato1:hover {
+    margin: 0 0 3em 0;
+    transform: rotate(45deg);
+  }
+
+  .plato2 {
+    max-height: 6em;
+    transition: 3s;
+    margin: 0;
+    align-self: self-end;
+  }
+
+  .plato2:hover {
+    margin: 0;
+    transform: rotate(45deg);
+  }
+
+  .plato3 {
+    max-height: 8em;
+    margin: 0 0 3em 0;
+    transition: 3s;
+  }
+
+  .plato3:hover {
+    margin: 0 0 3em 0;
+    transform: rotate(45deg);
+  }
+
+  /* end plates */
+  #flecha {
+    text-align: center;
+  }
+
+  #flecha:hover {
+    font-size: initial;
+  }
+
+  /* ----------------------------INFO SECTION-------------------------------- */
+  .part1 {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    font-size: unset;
+    align-items: start;
+    gap: 5em;
+  }
+
+  #coleccion:hover {
+    color: rgb(246, 239, 231);
+  }
+
+  #mesa {
+    grid-area: mesa;
+    max-width: 86%;
+  }
+
+  /* --------------------------------COLECTION---------------------------------- */
+  .part2 {
+    grid-area: colection;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    gap: 3em;
+  }
+
+  .part2 h2 {
+    font-size: revert;
+  }
+
+  #figures {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+  }
+
+  .ilustracion {
+    width: 80%;
+    border: solid #67453d;
+    border-radius: 12%;
+    transition: 1s;
+  }
+
+  .ilustracion:hover {
+    background-color: rgb(246, 239, 231);
+  }
+
+  .part3 {
+    display: none;
+  }
+
+  /* 
+      -----------------------------FOOTER--------------------------- */
+  footer {
+    background: white;
+    padding: 1em;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+    gap: 1em;
+    font-size: 63%;
+  }
+
+  #botonera__footer {
+    height: 47%;
+    width: 19%;
+    justify-content: space-between;
+  }
+
+  .boton__footer {
+    transition: 0.5s;
+    font-size: large;
+  }
+}
+/* ----------------------------START SHOP PAGE ----------------------------------------------------------------*/
+#main__shop {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 0;
+}
+
+.titulo__productos {
+  text-align: center;
+  margin: 1em 0 1em 0;
+}
+
+.titulo__colecciones {
+  margin: 1em;
+}
+
+.plants {
+  display: flex;
+  flex-direction: column;
+}
+
+.conteiner__img_shop {
+  gap: 1em;
+  padding: 3em;
+}
+
+.imgshop {
+  max-height: 15em;
+  margin: 3em 3em 0 3em;
+  border-radius: 15%;
+}
+
+.cards {
+  display: inline-block;
+  text-align: center;
+}
+
+.card-title {
+  font-size: larger;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.13);
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: rgba(0, 0, 0, 0.13);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:link {
+  background-color: rgba(0, 0, 0, 0.13);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------------------------------SING ING PAGE---------------------------------- */
+#main__singin {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 1em;
+}
+
+#main__cart {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 6em;
+}
+
+.registrate {
+  justify-self: center;
+}
+
+form {
+  text-align: center;
+}
+
+.centrar {
+  text-align: -webkit-center;
+}
+
+.form-check .form-check-input {
+  float: inherit;
+}
+
+/* --------------------contact---------------------------------------------------------------------------- */
+#main__contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 6em;
+}
+
+.needs-validation {
+  place-content: center;
+  padding: 2em 0px 0 0;
+}
+
+#validationCustom03 {
+  height: 11em;
+  width: 40em;
+}
+
+.btn-outline-success {
+  color: #67453d;
+  border-color: #67453d;
+}
+
+.btn-outline-success:hover {
+  color: #67453d;
+  border-color: #67453d;
+}/*# sourceMappingURL=style.css.map */

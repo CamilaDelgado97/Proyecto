@@ -1,0 +1,26 @@
+header {
+    /* grid-area:1/1/2/2; */
+      grid-area: header;
+      width: 100%;
+      top: 0%;
+      position: -webkit-sticky;
+      align-self: start;
+      z-index: 2;
+      background-color: $navcolor;
+
+      .buttom {
+        text-decoration: none;
+        transition: 0.5s;
+        color: $colortipografia;
+        font-size: x-large;
+      }
+    
+      .buttom:hover {
+        font-size: x-larger;
+        color: $colortipografia;
+      }
+
+      .carrito {
+     max-height: 1em;
+  }
+  }
