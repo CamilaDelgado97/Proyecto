@@ -1,0 +1,125 @@
+@media (max-width:480px) {
+
+    header {
+        .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+            color: $font_color;
+            &:hover{
+                color:$font_logo;
+            }
+        }
+        nav {
+            background-color: $background_header;
+            #logo{
+                color: $font_logo;
+                text-shadow: black 0.1em 0.1em 0.2em 
+            }
+            a {
+                text-decoration: none;
+                font-size: x-large;
+                i {
+                    color: $font_color;
+                }
+            }
+
+            .btn-outline-success {
+                border-color: $font_color;
+                color: $font_color;
+
+                &:hover {
+                    background-color: $font_color;
+                    color: $background_header;
+                    border-color: $font_color;
+                }
+            }
+        }
+    }
+}
+
+//-----------------------------------------TABLET----------------------------
+
+@media (min-width:480px) and (max-width:728px) {
+    header {
+        .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+            color: $font_color;
+            &:hover{
+                color:$font_logo;
+            }
+        }
+        nav {
+            background-color: $background_header;
+            #logo{
+                color: $font_logo;
+                text-shadow: black 0.1em 0.1em 0.2em
+            }
+            a {
+                text-decoration: none;
+                font-size: x-large;
+                i {
+                    color: $font_color;
+                }
+            }
+
+            .btn-outline-success {
+                border-color: $font_color;
+                color: $font_color;
+
+                &:hover {
+                    background-color: $font_color;
+                    color: $background_header;
+                    border-color: $font_color;
+                }
+            }
+        }
+    }
+}
+
+//-------------------------------DESKTOP-----------------------------------
+
+@media (min-width: 728px) {
+    header {
+        background-color: $background_header;
+        .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+            color: $font_color;
+            &:hover{
+                color:$font_logo;
+            }
+        }
+        #logo{
+            color: $font_logo;
+            font-size: x-large;
+            text-shadow: black 0.1em 0.1em 0.2em
+        }
+        ul {
+           
+            li {
+                font-size: larger;
+                transition: 0.5s;   
+                #buttom {
+                    text-decoration: none;
+                    transition: 0.5s;
+                    font-size: x-large;
+                &:hover {
+                    font-size: x-large;
+                }
+            }
+        }
+    }
+}
+
+.btn-outline-success {
+    color: $font_color;
+    border-color: $font_color;
+    &:hover{
+        background-color: $font_color;
+        color: $background_header;
+        border-color:$font_color
+    }
+}
+
+i{
+    transition: 0.5s;
+    &:hover{
+        font-size: larger;
+    }
+}
+}

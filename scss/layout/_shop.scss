@@ -1,5 +1,7 @@
 
 #main__shop {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
@@ -9,6 +11,7 @@
 
   .titulo{
      text-align: center;
+     font-weight: $font_weight;
 
     &-productos {
     @extend .titulo;

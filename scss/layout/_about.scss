@@ -1,0 +1,96 @@
+@media (max-width:480px) {
+    #main__about {
+        background-image: url(../img/background.jpg);
+        background-size: cover;
+    
+        .card__conteiner {
+            text-align: -webkit-center;
+            padding: 4%;
+    
+            .tarjetas {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: solid lightgray;
+                border-radius: 10% 0% 15% 0;
+                box-shadow: 2px 0px 23px grey;
+                width: 80%;
+                margin: 4%;
+                background-color: $card_background;
+    
+                .text {
+                    display: flex;
+                    flex-direction: column;
+    
+                    h2,
+                    h1 {
+                        background-color: lightgray;
+                        border-radius: 93% 0 0 0;
+                        font-weight: $font_weight;
+                    }
+    
+                    p {
+                        margin: 19% 3% 0;
+                        font-weight: 700;
+                        font-size: larger;
+                    }
+    
+                }
+    
+                img {
+                    width: 99%;
+                    padding: 1%;
+                    border-radius: 39% 0 39% 0;
+                }
+            }
+    
+        }
+    }
+}
+@media (min-width:480px){
+#main__about {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+
+    .card__conteiner {
+        text-align: -webkit-center;
+        padding: 4%;
+
+        .tarjetas {
+            display: flex;
+            border: solid lightgray;
+            border-radius: 12% 0% 15% 0;
+            box-shadow: 2px 0px 23px grey;
+            width: 80%;
+            margin: 4%;
+            background-color: $card_background;
+
+            .text {
+                display: flex;
+                flex-direction: column;
+
+                h2,
+                h1 {
+                    background-color: lightgray;
+                    border-radius: 93% 0 0 0;
+                    font-weight: $font_weight;
+                }
+
+                p {
+                    margin: 19% 3% 0;
+                    font-weight: 700;
+                    font-size: larger;
+                }
+
+            }
+
+            img {
+                width: 35%;
+                padding: 1%;
+                border-radius: 39% 0 39% 0;
+            }
+        }
+
+    }
+}
+}

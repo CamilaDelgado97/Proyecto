@@ -1,0 +1,36 @@
+@media (max-width:480px){
+  #go_shopping{
+    min-width: fit-content;
+  }
+  
+}
+
+
+#main__cart {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    background-image: url(../img/background.jpg);
+
+    #contenedor_cart{
+      display: flex;
+      flex-direction: column;
+      text-align: -webkit-center;
+      align-items: center;
+      h1{
+        margin: 0 0 3em 0;
+      }
+    }
+    #go_shopping {
+      width: 20%;
+      background-color: transparent;
+      border-color: $font_color;
+      color: $font_color;
+      margin: 0 0 5em 0;
+      &:hover{
+        background-color: $font_color;
+        color: $background_header;
+      }
+    }
+  }
+  

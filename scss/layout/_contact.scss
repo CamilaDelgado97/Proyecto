@@ -1,0 +1,50 @@
+@media (max-width:480px){
+  #main__contact{
+  #enviar{
+    min-width: min-content;
+  }
+}
+}
+
+#main__contact {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1em;
+  
+
+  .contact__us {
+    font-weight:bold;
+    text-align: center;
+  }
+  #email {
+    text-align: -webkit-center;
+  }
+  #comment{
+    text-align: -webkit-center;
+  }
+ .form-control {
+  width: 69%;
+ }
+
+ #enviar{
+  margin-top: 1em;
+  width: 8%;
+  color: $font_color;
+  border-color:$font_color;
+  &:hover{
+    background-color: $font_color;
+    color: $background_header;
+  }
+ }
+
+  //mobile
+// #email{
+//     place-self: center;
+// }
+
+// #comment {
+//     place-self: center;
+}

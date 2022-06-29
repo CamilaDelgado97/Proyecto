@@ -1,0 +1,367 @@
+@media (max-width:480px) {
+
+  #main {
+    background-color: $card_background;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "hero"
+      "info"
+      "colection"
+      "footer";
+
+    //---HERO
+    .hero {
+      grid-area: hero;
+      display: flex;
+      flex-direction: column;
+
+      .titulo {
+        text-align: center;
+        margin: 1em;
+        font-size: 3em;
+        text-shadow: 0 0 0.2em $font_color, 0 0 0.2em $font_color,
+          0 0 0.2em $font_color;
+      }
+
+      .contenedor__img {
+        display: flex;
+        align-items: center;
+        align-self: center;
+        margin: 0 0 5em 0;
+
+        .plato1 {
+          position: unset;
+          z-index: 0;
+          max-height: 7em;
+          margin: 0 0 3em 0;
+          transition: 3s;
+          align-self: baseline;
+
+          &:hover {
+            margin: 0 0 3em 0;
+            transform: rotate(45deg);
+          }
+        }
+
+        .plato2 {
+          position: unset;
+          z-index: 0;
+          max-height: 6em;
+          transition: 3s;
+          margin: 0;
+          align-self: flex-end;
+
+          &:hover {
+            margin: 0;
+            transform: rotate(45deg);
+          }
+        }
+
+        .plato3 {
+          position: unset;
+          z-index: 0;
+          max-height: 8em;
+          margin: 0 0 3em 0;
+          transition: 3s;
+
+          &:hover {
+            margin: 0 0 3em 0;
+            transform: rotate(45deg);
+          }
+        }
+      }
+
+      #flecha {
+        margin: 0 0 4em 0;
+        text-align: center;
+
+        &:hover {
+          font-size: initial;
+        }
+      }
+    }
+
+
+    //info
+
+    .part1 {
+      grid-area: info;
+      display: flex;
+      flex-direction: column;
+      gap: 3em;
+      margin: 0 1em 0 1em;
+
+      .info {
+        display: flex;
+        font-size: larger;
+        align-items: flex-start;
+        gap: 5em;
+        flex-direction: column;
+
+        .subtitle {
+          font-weight: $font_weight;
+          text-align: center;
+        }
+
+        #coleccion {
+          color: $font_color;
+
+          &:hover {
+            color: rgb(246, 239, 231);
+          }
+        }
+      }
+
+      #mesa {
+        max-width: 86%;
+      }
+    }
+
+    //--colection
+    .part2 {
+      grid-area: colection;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      gap: 3em;
+
+      h2 {
+        font-size: revert;
+      }
+
+      #figures {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: flex-start;
+
+        .ilustracion {
+          width: 80%;
+          border: solid #67453d;
+          border-radius: 12%;
+          transition: 1s;
+
+          &:hover {
+            background-color: rgb(246, 239, 231);
+          }
+        }
+      }
+    }
+
+  }
+
+  /* 
+      -----------------------------FOOTER--------------------------- */
+  footer {
+    background: white;
+    padding: 1em;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 1em;
+    font-size: 63%;
+  }
+
+  #botonera__footer {
+    height: 47%;
+    width: 19%;
+    display: flex;
+    list-style: none;
+    gap: 5em;
+  }
+
+  .boton__footer {
+    transition: 0.5s;
+    font-size: large;
+  }
+
+}
+
+@media (min-width:480px) {
+
+
+  #main {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr auto;
+    grid-template-areas:
+      "hero"
+      "info"
+      "colection"
+      "footer";
+
+    .hero {
+      grid-area: hero;
+
+      .titulo {
+        text-align: center;
+        font-size: 5em;
+       
+        .welcome {
+          display: none;
+        }
+
+        #title {
+          font-size: inherit; 
+        }
+        }
+
+        .contenedor__img{
+          margin: 2em 0 0 0;
+          display: flex;
+          flex-wrap: wrap;
+          place-content: center;
+          gap: 2em;
+      
+        .plato1,
+        .plato2,
+        .plato3 {
+          z-index: 0;
+        }
+
+        .plato1 {
+          max-height: 17em;
+          transition: all 3s ease-out;
+        &:hover {
+          transform: rotate(45deg);
+        }
+      }
+
+        .plato2 {
+          max-height: 11em;
+          transition: all 3s ease-out;
+        &:hover {
+          transform: rotate(45deg);
+        }
+      }
+
+        .plato3 {
+          max-height: 24em;
+          transition: all 3s ease-out;
+        &:hover {
+          transform: rotate(45deg);
+        }
+      }
+ }
+        #flecha {
+          text-align: -webkit-center;
+          font-size: xx-large;
+          transition: 0.5s;
+        &:hover {
+          font-size: initial;
+        }
+      }
+     
+    }
+
+
+    .part1 {
+      grid-area: info;
+      display: flex;
+      gap: 1em;
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        font-size: x-large;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 1em;
+      }
+    
+      #coleccion{
+        color: $font_color;
+      &:hover {
+        color: $background_header;
+      }
+    }
+  }
+
+    .part2 {
+      grid-area: colection;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      h2 {
+        font-size: xx-large;
+      }
+
+      #figures {
+        display: flex;
+        text-align: center;
+
+        .ilustracion {
+          width: 80%;
+          border: solid #67453d;
+          border-radius: 12%;
+          transition: 1s;
+        }
+
+        .ilustracion:hover {
+          background-color: $background_header;
+          -webkit-animation: ilustraciones 2s;
+          animation: ilustraciones 2s;
+        }
+
+
+        @-webkit-keyframes ilustraciones {
+          25% {
+            transform: translateY(2px);
+          }
+        }
+
+        @keyframes ilustraciones {
+          25% {
+            transform: translateY(2px);
+          }
+        }
+      }
+    }
+
+    .part3 {
+      grid-area: playlist;
+      display: flex;
+      justify-content: flex-end;
+      gap: 25%;
+      align-items: center;
+      font-size: x-large;
+    }
+
+  }
+  //FOOTER
+    footer {
+      background: $white;
+      padding: 4em 0 4em 0;
+      grid-area: footer;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+
+      #botonera__footer {
+        list-style: none;
+        display: flex;
+        height: 54%;
+        width: 19%;
+        justify-content: inherit;
+
+        .boton__footer {
+          transition: 0.5s;
+          font-size: x-large;
+        }
+
+        .boton__footer:hover {
+          font-size: xx-large;
+        }
+      }
+    }
+}
